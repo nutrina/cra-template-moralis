@@ -1,0 +1,25 @@
+.amountTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.amountTable th, td {
+    padding: 0.25rem;
+    text-align: left;
+    border: 1px solid #ccc;
+    background: rgba(4, 24, 54, 0.75);
+}
+
+/* .amountTable tr:nth-child(odd) {
+    / * background: #eee; * /
+    background: rgba(4, 24, 54, 0.75);
+} */
+
+.sectionHeader {
+    font-size: xx-large;
+    padding-bottom: 5px;
+}
+
+.tableSection {
+    padding: 20px;
+}

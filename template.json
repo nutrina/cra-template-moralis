@@ -5,7 +5,10 @@
       "@testing-library/jest-dom": "^4.2.4",
       "@testing-library/react": "^9.3.2",
       "@testing-library/user-event": "^7.1.2",
-      "react-redux": "^7.2.3"
+      "react-redux": "^7.2.3",
+      "ethers": "^5.4.2",
+      "moralis": "^0.0.30",
+      "react-moralis": "^0.2.0"
     }
   }
 }
