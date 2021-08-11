@@ -1,6 +1,6 @@
 {
-  "name": "cra-template-redux",
-  "version": "1.0.3",
+  "name": "cra-template-moralis",
+  "version": "0.0.1",
   "scripts": {
     "format": "prettier --write ./template/src/**/*.js",
     "lint": "eslint './template/src/**/*.js'",
@@ -14,18 +14,18 @@
     "reduxjs",
     "react-redux"
   ],
-  "description": "The official Redux+JS template for Create React App.",
+  "description": "A Moralis template for Create React App.",
   "main": "template.json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reduxjs/cra-template-redux.git"
+    "url": "https://github.com/nutrina/cra-template-moralis"
   },
   "license": "MIT",
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/reduxjs/cra-template-redux/issues"
+    "url": "https://github.com/nutrina/cra-template-moralis/issues"
   },
   "files": [
     "template",
