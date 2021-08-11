@@ -8,7 +8,7 @@ import styles from "./App.module.css";
 
 
 function App() {
-  const { isAuthenticated, isAuthenticating, isInitialized, authenticate, auth, hasAuthError, authError } = useMoralis();
+  const { isAuthenticated, isAuthenticating, isInitialized, authenticate, hasAuthError, authError } = useMoralis();
   let content = null;
 
   const handleLoginWithMetamask = () => {
