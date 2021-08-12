@@ -32,7 +32,7 @@ const Header = () => {
     >Refresh Balance
   </button> : null;
 
-  const gitHub = <a href="https://github.com/nutrina/moralis_wallet">GitHub</a>;
+  const gitHub = <a href="https://github.com/nutrina/cra-template-moralis">GitHub</a>;
 
   return (
     <nav>

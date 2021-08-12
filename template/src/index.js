@@ -13,7 +13,7 @@ function ConfigWarning() {
     Please follow the following steps:
     <ul>
       <li>
-        create <a href="Create a Moralis Server Instance">Moralis Server Instance</a>
+        create <a href="https://docs.moralis.io/moralis-server/getting-started/quick-start">Moralis Server Instance</a>
       </li>
       <li>
         in the project folder, make a copy of the file  <em>.env.sample</em> and name it <em>.env.local</em>
@@ -27,6 +27,7 @@ function ConfigWarning() {
     </ul>
   </div>
 }
+
 async function init() {
   const MORALIS_APP_ID = process.env.REACT_APP_MORALIS_APP_ID;
   const MORALIS_SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL;

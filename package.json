@@ -1,6 +1,6 @@
 {
   "name": "cra-template-moralis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "format": "prettier --write ./template/src/**/*.js",
     "lint": "eslint './template/src/**/*.js'",

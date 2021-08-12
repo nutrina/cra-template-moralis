@@ -16,12 +16,15 @@ function App() {
   }
 
   if (!window.ethereum) {
-    content = <div> You need to use supported browser like
-      <a href="https://chrome.google.com/"> Chrome </a>
-      or
-      <a href="https://brave.com/"> Brave </a>
-      and install a Web3 Wallet like
-      <a href="https://metamask.io"> Metamask </a>
+    content = <div className={styles.row}>
+      <div>You do not seem to use a supported browser, or you do not have the <a href="https://metamask.io"> Metamask </a> plugin installed. <br />
+        Please use supported browser like
+        <a href="https://chrome.google.com/"> Chrome </a>
+        or
+        <a href="https://brave.com/"> Brave </a>
+        and install a Web3 Wallet like
+        <a href="https://metamask.io"> Metamask </a>.
+      </div>
     </div>
   } else if (!isInitialized || isAuthenticating) {
     content = <div className={styles.row}>
@@ -39,7 +42,14 @@ function App() {
 
   let error = null;
   if (hasAuthError) {
-    error = <div>Auth Error: {authError.message}</div>;
+    error = <div>
+      <div className={styles.row}>Auth Error: {authError.message}</div>
+      <div className={styles.row}>
+        <span>
+          Please make sure you have entered the correct information of your <a href="https://docs.moralis.io/moralis-server/getting-started/quick-start"> Moralis Server Instance </a> in the file <em>.env.local</em>
+        </span>
+      </div>
+    </div>
   }
 
   return (
@@ -49,7 +59,7 @@ function App() {
         <img src={logo} alt="Built With Moralis" />
       </div>
       <div className={styles.row}>
-        <div className={styles.learnParagraph}>Learn more about Moralis <a href="https://moralis.io">here</a></div>
+        <div className={styles.learnParagraph}>Learn more about <a href="https://moralis.io">Moralis</a></div>
       </div>
       <div className={styles.row}>
         {error}
